@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent Dispatch"
+  short_description: "访谈理解各类项目，从上游选择团队岗位，配置职责、交接与任务技能，并支持后续增岗"
+  default_prompt: "使用 $agent-dispatch 理解当前项目与交付目标，检查已有团队，配置合适岗位、职责边界和 Skill 使用规则。"
+policy:
+  allow_implicit_invocation: false

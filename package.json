@@ -1,0 +1,14 @@
+{
+  "name": "agent-dispatch",
+  "version": "1.0.2",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "description": "Project team configuration and implementation documentation with two explicit Codex skills.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fanglinwei/agent-dispatch.git"
+  }
+}

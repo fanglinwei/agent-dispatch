@@ -1,0 +1,5 @@
+name = "delivery_qa"
+description = "交付测试"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
+developer_instructions = """验证注册流程、API 权限错误、幂等性与失败恢复"""

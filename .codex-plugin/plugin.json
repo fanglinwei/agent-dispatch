@@ -1,0 +1,23 @@
+{
+  "name": "agent-dispatch",
+  "version": "1.0.2",
+  "description": "理解项目并配置专业团队，按岗位分工编写可执行的实施文档。两个显式调用的 Skill，也支持独立安装。",
+  "author": {
+    "name": "Agent Dispatch Contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Dispatch",
+    "shortDescription": "项目团队配置与实施文档",
+    "longDescription": "agent-dispatch 负责项目理解、上游选岗、增岗和职责及技能配置；agent-dispatch-doc 基于已配置团队组织各岗位编写、复核和维护新的实施文档。",
+    "developerName": "Agent Dispatch Contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "defaultPrompt": [
+      "使用 agent-dispatch 为当前项目配置团队与职责。",
+      "使用 agent-dispatch-doc，由已有团队编写新的实施文档。"
+    ]
+  }
+}

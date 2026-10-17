@@ -1,0 +1,14 @@
+{
+  "name": "agent-dispatch",
+  "interface": {
+    "displayName": "Agent Dispatch"
+  },
+  "plugins": [
+    {
+      "name": "agent-dispatch",
+      "source": {"source": "url", "url": "https://github.com/fanglinwei/agent-dispatch.git", "ref": "main"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}

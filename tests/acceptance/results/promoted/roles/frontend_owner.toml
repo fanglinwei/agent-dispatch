@@ -1,0 +1,5 @@
+name = "frontend_owner"
+description = "前端负责人"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
+developer_instructions = """Vue 页面实现、状态与 API 调用"""

@@ -1,0 +1,5 @@
+name = "code_auditor"
+description = "代码审查"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
+developer_instructions = """只读审查实际代码差异和调用者，交付缺陷证据"""

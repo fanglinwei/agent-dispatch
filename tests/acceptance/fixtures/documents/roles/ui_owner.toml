@@ -1,0 +1,5 @@
+name = "ui_owner"
+description = "UI 负责人"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
+developer_instructions = """页面视觉、交互状态、触控和可访问性"""

@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/msitarzewski/agency-agents",
+  "commit": "652b2692f8d8ec2b1f1a38e559073e287dfdc469",
+  "files": [
+    {
+      "path": "marketing/marketing-content-creator.md",
+      "url": "https://raw.githubusercontent.com/msitarzewski/agency-agents/652b2692f8d8ec2b1f1a38e559073e287dfdc469/marketing/marketing-content-creator.md",
+      "sha256": "26ddce44f057068a3935c13d53becd3c57385fb47fcdcfdd891b80269070b3d5"
+    },
+    {
+      "path": "support/support-legal-compliance-checker.md",
+      "url": "https://raw.githubusercontent.com/msitarzewski/agency-agents/652b2692f8d8ec2b1f1a38e559073e287dfdc469/support/support-legal-compliance-checker.md",
+      "sha256": "08d938c5666e41b3cf197c2f7b37070d7f39aca62b7147d157200eb6dbeeced6"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/msitarzewski/agency-agents/652b2692f8d8ec2b1f1a38e559073e287dfdc469/LICENSE",
+      "sha256": "9a45258434d5cedf0af73c9ad4771373701225038d246c49219026c33677f66f"
+    }
+  ]
+}

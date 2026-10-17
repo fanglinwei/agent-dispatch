@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent Dispatch Doc"
+  short_description: "基于已配置团队组织各岗位编写新的实施文档，明确工作、交接与验收，经复核确认后实施"
+  default_prompt: "使用 $agent-dispatch-doc 核对当前项目团队，组织各岗位编写和复核新的实施文档，经我确认后作为后续实施依据。"
+policy:
+  allow_implicit_invocation: false
