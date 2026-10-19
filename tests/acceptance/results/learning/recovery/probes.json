@@ -1,0 +1,364 @@
+{
+  "method": "actual isolated save calls; os._exit(73) at three injected process boundaries",
+  "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+  "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+  "changed_sha256": "ae94748b7499f36b5a58397923f050e77b9381956fe882908066cc79b1d075a1",
+  "cases": {
+    "normal": {
+      "exit_code": 0,
+      "target": "probes/normal/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+      "pending_exists": false,
+      "result": {
+        "status": "saved",
+        "learning_status": "已保存",
+        "committed": true,
+        "reason": "candidate_verified",
+        "phase": "complete",
+        "target": "record.md",
+        "pending_retained": false,
+        "sync": {
+          "file": "synced",
+          "directory": "synced"
+        },
+        "issues": [],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "observed_revision": 1
+      },
+      "stderr": ""
+    },
+    "during_write": {
+      "exit_code": 73,
+      "target": "probes/during_write/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": true,
+      "result": null,
+      "stderr": ""
+    },
+    "before_replace": {
+      "exit_code": 73,
+      "target": "probes/before_replace/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": true,
+      "result": null,
+      "stderr": ""
+    },
+    "after_replace": {
+      "exit_code": 73,
+      "target": "probes/after_replace/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+      "pending_exists": false,
+      "result": null,
+      "stderr": ""
+    },
+    "first_create": {
+      "exit_code": 0,
+      "target": "probes/first_create/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+      "pending_exists": false,
+      "result": {
+        "status": "saved",
+        "learning_status": "已保存",
+        "committed": true,
+        "reason": "candidate_verified",
+        "phase": "complete",
+        "target": "record.md",
+        "pending_retained": false,
+        "sync": {
+          "file": "synced",
+          "directory": "synced"
+        },
+        "issues": [],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "observed_revision": 1
+      },
+      "stderr": ""
+    },
+    "archive_create": {
+      "exit_code": 0,
+      "target": "probes/archive_create/archive/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+      "pending_exists": false,
+      "result": {
+        "status": "saved",
+        "learning_status": "已保存",
+        "committed": true,
+        "reason": "candidate_verified",
+        "phase": "complete",
+        "target": "archive/record.md",
+        "pending_retained": false,
+        "sync": {
+          "file": "synced",
+          "directory": "synced"
+        },
+        "issues": [],
+        "pending": "archive/record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "observed_revision": 1
+      },
+      "stderr": ""
+    },
+    "missing_pending_authorization": {
+      "exit_code": 0,
+      "target": "probes/missing_pending_authorization/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": false,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "preflight_or_parent_creation_failed",
+        "phase": "preflight",
+        "target": "record.md",
+        "pending_retained": null,
+        "sync": {
+          "file": "not_attempted",
+          "directory": "not_attempted"
+        },
+        "issues": [
+          {
+            "type": "_Invalid",
+            "errno": null,
+            "reason": "both_exact_paths_must_be_authorized"
+          }
+        ],
+        "pending": "record.md.pending"
+      },
+      "stderr": ""
+    },
+    "pending_exists": {
+      "exit_code": 0,
+      "target": "probes/pending_exists/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": true,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "existing_pending_requires_recovery",
+        "phase": "read_current",
+        "target": "record.md",
+        "pending_retained": true,
+        "sync": {
+          "file": "not_attempted",
+          "directory": "not_attempted"
+        },
+        "issues": [],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+        "observed_revision": 0
+      },
+      "stderr": "",
+      "pending_unchanged": true
+    },
+    "stale_target": {
+      "exit_code": 0,
+      "target": "probes/stale_target/record.md",
+      "before_sha256": "ae94748b7499f36b5a58397923f050e77b9381956fe882908066cc79b1d075a1",
+      "target_sha256": "ae94748b7499f36b5a58397923f050e77b9381956fe882908066cc79b1d075a1",
+      "pending_exists": true,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "target_changed_after_staging",
+        "phase": "recheck_target",
+        "target": "record.md",
+        "pending_retained": true,
+        "sync": {
+          "file": "synced",
+          "directory": "not_attempted"
+        },
+        "issues": [],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "ae94748b7499f36b5a58397923f050e77b9381956fe882908066cc79b1d075a1",
+        "observed_revision": 0
+      },
+      "stderr": ""
+    },
+    "replace_failure": {
+      "exit_code": 0,
+      "target": "probes/replace_failure/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": true,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "save_failed_original_preserved",
+        "phase": "replace",
+        "target": "record.md",
+        "pending_retained": true,
+        "sync": {
+          "file": "synced",
+          "directory": "not_attempted"
+        },
+        "issues": [
+          {
+            "type": "OSError",
+            "errno": 5,
+            "reason": "operation_failed"
+          }
+        ],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+        "observed_revision": 0
+      },
+      "stderr": ""
+    },
+    "unsupported_replace": {
+      "exit_code": 0,
+      "target": "probes/unsupported_replace/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": true,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "save_failed_original_preserved",
+        "phase": "replace",
+        "target": "record.md",
+        "pending_retained": true,
+        "sync": {
+          "file": "synced",
+          "directory": "not_attempted"
+        },
+        "issues": [
+          {
+            "type": "NotImplementedError",
+            "errno": null,
+            "reason": "operation_failed"
+          }
+        ],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+        "observed_revision": 0
+      },
+      "stderr": ""
+    },
+    "pending_symlink": {
+      "exit_code": 0,
+      "target": "probes/pending_symlink/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": true,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "preflight_or_parent_creation_failed",
+        "phase": "preflight",
+        "target": "record.md",
+        "pending_retained": true,
+        "sync": {
+          "file": "not_attempted",
+          "directory": "not_attempted"
+        },
+        "issues": [
+          {
+            "type": "_Invalid",
+            "errno": null,
+            "reason": "symlink_path"
+          }
+        ],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1
+      },
+      "stderr": "",
+      "pending_unchanged": true,
+      "linked_file_unchanged": true
+    },
+    "target_alias": {
+      "exit_code": 0,
+      "target": "probes/target_alias/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "pending_exists": false,
+      "result": {
+        "status": "pending",
+        "learning_status": "待保存",
+        "committed": false,
+        "reason": "preflight_or_parent_creation_failed",
+        "phase": "preflight",
+        "target": "record.md",
+        "pending_retained": false,
+        "sync": {
+          "file": "not_attempted",
+          "directory": "not_attempted"
+        },
+        "issues": [
+          {
+            "type": "_Invalid",
+            "errno": null,
+            "reason": "nonregular_or_hardlinked_file"
+          }
+        ],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1
+      },
+      "stderr": "",
+      "linked_file_unchanged": true
+    },
+    "directory_sync_failure": {
+      "exit_code": 0,
+      "target": "probes/directory_sync_failure/record.md",
+      "before_sha256": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+      "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+      "pending_exists": false,
+      "result": {
+        "status": "saved",
+        "learning_status": "已保存",
+        "committed": true,
+        "reason": "candidate_verified_after_error",
+        "phase": "sync_directory",
+        "target": "record.md",
+        "pending_retained": false,
+        "sync": {
+          "file": "synced",
+          "directory": "failed"
+        },
+        "issues": [
+          {
+            "type": "OSError",
+            "errno": 5,
+            "reason": "operation_failed"
+          }
+        ],
+        "pending": "record.md.pending",
+        "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "candidate_revision": 1,
+        "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+        "observed_revision": 1
+      },
+      "stderr": ""
+    }
+  }
+}

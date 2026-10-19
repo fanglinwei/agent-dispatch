@@ -1,0 +1,9 @@
+{
+  "daily_maintenance_authorized": true,
+  "current_task": "read-only review",
+  "delta": "validated correction",
+  "exception_case": {
+    "explicit_exception_for_this_task": true,
+    "path": ".codex/agent-memory/content-creator.md"
+  }
+}

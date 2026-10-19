@@ -1,0 +1,3 @@
+
+
+项目学习入口：以本次获准项目根为基准，先读取 AGENTS.md 的岗位映射与 .codex/agent-memory/protocol.md，再实际读取 .codex/agent-memory/ROLE_KEY.md；稳定 role-key 为 ROLE_KEY。按协议在任务中核实纠错并交接增量，当前授权及正式职责优先。记忆缺失时报告并依权威材料继续，不自行迁移配置或写共享记忆。

@@ -1,0 +1,15 @@
+{
+  "scope": "isolated-simulated-user",
+  "operation": "archive",
+  "project": "cases/current_replace_failure/project",
+  "readonly": false,
+  "allowed": [
+    "archive/record.md",
+    "archive/record.md.pending",
+    "record.md",
+    "record.md.pending"
+  ],
+  "pendingEvidence": {
+    "record.md.pending": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+  }
+}

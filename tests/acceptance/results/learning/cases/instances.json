@@ -1,0 +1,20 @@
+{
+  "deltas": [
+    {
+      "delta_id": "t/content-creator/a/1",
+      "body": "A"
+    },
+    {
+      "delta_id": "t/content-creator/b/1",
+      "body": "B"
+    },
+    {
+      "delta_id": "t/content-creator/a/1",
+      "body": "A"
+    },
+    {
+      "delta_id": "t/content-creator/a/1",
+      "body": "changed"
+    }
+  ]
+}

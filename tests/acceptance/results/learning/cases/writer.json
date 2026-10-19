@@ -1,0 +1,8 @@
+{
+  "known_other_writer": true,
+  "stale_version_case": {
+    "exclusive_writer": true,
+    "read_revision": 0,
+    "current_revision": 1
+  }
+}

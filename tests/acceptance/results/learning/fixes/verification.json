@@ -1,0 +1,24 @@
+{
+  "scope": "isolated-simulated-user",
+  "performedAt": "2026-10-19T04:28:19.862102+00:00",
+  "preservedExistingMemory": "ef6a6bfbbd29d5da615dba092cd8685a1d444e60ffb42a3f1d77df7eb6d1c255",
+  "pathsAgent": "/root/fix_paths_behavior",
+  "saveAgent": "/root/fix_save_behavior",
+  "baselineAgent": "/root/fix_baseline",
+  "nativeTomlParse": "PASS",
+  "limits": [
+    "Independent baseline chose safe role paths; deterministic old-rule reproductions demonstrate the gaps, not a universal agent failure.",
+    "Process exits are instrumented os._exit(73) in isolated child processes, not power loss or concurrent-primary testing.",
+    "Linked-file probe outputs are copied as regular byte snapshots; original alias setup is retained in fault-harness.py.",
+    "Save code is a real independent acceptance artifact; it is not installed as a production runtime."
+  ],
+  "nativeTomlFiles": 6,
+  "saveCodeSha256": "8f2c11dc0bfdbaa780b0531e833ed46e317b16919fb585a68cf36b840bd44a06",
+  "primaryProcessProbes": 14,
+  "independentDirectChecks": 20,
+  "repeatAgent": "/root/fix_repeat_final",
+  "repeatReportSha256": "c4823fc4d77874e4106fc096588fa3da2d165eeb625441821da60da72b355957",
+  "repeatProjectUnchanged": true,
+  "repeatWorkspaceUnchanged": true,
+  "repeatCompletedAt": "2026-10-19T04:37:47.887129+00:00"
+}

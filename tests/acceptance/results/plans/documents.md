@@ -1,7 +1,9 @@
 # 文档方案
 
-输入：documents/ 下的已确认目标、事实、团队、技能与旧设计。
-产出：documents/docs/implementation.md（新实施设计草案）和 documents/docs/README.md（草案索引），唯一写入者为主代理。保留旧文档和所有岗位文件；内容确认前不修改 AGENTS.md 实施入口。
-五个岗位各自供稿至 contributions/<岗位名>.md 并复核整合版：product_owner 定义范围、流程、R1~R6需求；ui_owner 依 visual-layout 设计页面和状态；frontend_owner 定义 Vue 状态、API契约、错误恢复；delivery_qa 定义可执行用例与证据门槛；code_auditor 定义后续只读代码审查方法。本次不做实际代码审查或项目开发。
-R1活动列表；R2详情；R3表单校验；R4容量满；R5报名结果；R6网络失败重试并保留输入。无本阶段构建/执行记录，不继承旧 React/失败清空/PASS。
-各岗位具体工作含责任边界、输入/前置、设计/方法、输出/交接、依赖/顺序、完成条件、未知项。主代理集成后各岗复核，未决设计明确标建议；新内容均 DRAFT，专业复核不代替用户内容确认。后续模拟内容确认单独记录并在隔离副本测试升基线，不能外推到实际用户项目。
+读取 fixture 的现有五岗、AGENTS.md、最新目标与实际事实。既有团队完整复用，角色和 Skill 绑定不改。
+共享写入仅由主代理完成：docs/implementation.md 为具体实施设计，docs/README.md 为单一状态入口；旧材料保留。
+产品负责 R1～R6 流程与范围；UI 使用 visual-layout 定义组件与状态；前端定义 Vue/TS、接口适配及失败恢复；QA 规划容量、错误、重复提交与验收证据；审查岗位编写缺陷检查方法，不执行代码审查，不因 defect-evidence 缺失阻断文档。五岗各供稿并对整合版实际复核。
+当前为文档设计检查，不执行应用、支付或数据操作。每岗独占 contributions/<role>.md 与 reviews/<role>.md，其余只读；共享契约由主代理先统一，再检查岗位之间的生产与消费关系。
+专业复核通过也保持 DRAFT，模拟内容确认后才可修改 docs/README.md 和 AGENTS.md 中的实施入口。
+
+模拟用户：我确认以上文件方案，允许在此隔离工作区编写与专业复核；尚未确认最终内容。

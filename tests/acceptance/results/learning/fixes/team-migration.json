@@ -1,0 +1,12 @@
+{
+  "scope": "isolated-simulated-user",
+  "approval": "模拟批准：只更新三个隔离阶段副本的协议，以及上述各岗目标对应的精确暂存授权；保留角色、当前记忆和原有内容。不是实际项目或安装授权。",
+  "changed_files": [
+    "initial/AGENTS.md",
+    "initial/.codex/agent-memory/protocol.md",
+    "before-addition/AGENTS.md",
+    "before-addition/.codex/agent-memory/protocol.md",
+    "after-addition/AGENTS.md",
+    "after-addition/.codex/agent-memory/protocol.md"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "stable_key": "content-creator",
+  "display_name_after_rename": "Community Editor",
+  "replacement": "different substantive duty",
+  "split": [
+    "editor",
+    "checker"
+  ],
+  "retire": true,
+  "legacy_customization": [
+    "name",
+    "model",
+    "upstream body",
+    "user note",
+    "license"
+  ],
+  "repeat_has_learning": true
+}

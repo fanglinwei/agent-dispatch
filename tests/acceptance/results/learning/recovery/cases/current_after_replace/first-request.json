@@ -1,0 +1,13 @@
+{
+  "scope": "isolated-simulated-user",
+  "operation": "archive",
+  "project": "cases/current_after_replace/project",
+  "readonly": false,
+  "allowed": [
+    "archive/record.md",
+    "archive/record.md.pending",
+    "record.md",
+    "record.md.pending"
+  ],
+  "pendingEvidence": {}
+}

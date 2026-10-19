@@ -1,0 +1,1178 @@
+{
+  "scope": "isolated-simulated-user",
+  "performedAt": "2026-10-19T04:58:27.329893+00:00",
+  "method": "fresh OS processes; fixture-authorized recovery of actual instrumented crash remnants",
+  "harnessSha256": "6d7cce5d7aa68ac25bb71aeecc51b39019eae98b3109fe6ec02f3d327745814e",
+  "saveCodeSha256": "8f2c11dc0bfdbaa780b0531e833ed46e317b16919fb585a68cf36b840bd44a06",
+  "faultHarnessSha256": "fd76ae75e27ee2317b874f53040765ea21c461d16e424ae5fb6624c39b3fdd07",
+  "candidateSha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+  "saves": {
+    "during_write": {
+      "before": {
+        "path": "cases/save_during_write/before",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "78f73c439a31eb4544a11acadf97b097e431542802fbdc17fb6b83dded6be835"
+        }
+      },
+      "after": {
+        "path": "cases/save_during_write/after",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "retry": {
+        "path": "cases/save_during_write/retry",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55018,
+        "result": {
+          "classification": "not_saved",
+          "cleanedPending": true,
+          "status": "saved",
+          "save": {
+            "status": "saved",
+            "learning_status": "已保存",
+            "committed": true,
+            "reason": "candidate_verified",
+            "phase": "complete",
+            "target": "record.md",
+            "pending_retained": false,
+            "sync": {
+              "file": "synced",
+              "directory": "synced"
+            },
+            "issues": [],
+            "pending": "record.md.pending",
+            "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "candidate_revision": 1,
+            "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "observed_revision": 1
+          },
+          "pid": 55018
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55019,
+        "result": {
+          "classification": "saved",
+          "cleanedPending": false,
+          "status": "unchanged",
+          "save": {
+            "status": "unchanged",
+            "learning_status": "无增量",
+            "committed": false,
+            "reason": "no_increment",
+            "phase": "read_current",
+            "target": "record.md",
+            "pending_retained": false,
+            "sync": {
+              "file": "not_attempted",
+              "directory": "not_attempted"
+            },
+            "issues": [],
+            "pending": "record.md.pending",
+            "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "candidate_revision": 1,
+            "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "observed_revision": 1
+          },
+          "pid": 55019
+        }
+      },
+      "interruptionExitCode": 73
+    },
+    "before_replace": {
+      "before": {
+        "path": "cases/save_before_replace/before",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "after": {
+        "path": "cases/save_before_replace/after",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "retry": {
+        "path": "cases/save_before_replace/retry",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55022,
+        "result": {
+          "classification": "not_saved",
+          "cleanedPending": true,
+          "status": "saved",
+          "save": {
+            "status": "saved",
+            "learning_status": "已保存",
+            "committed": true,
+            "reason": "candidate_verified",
+            "phase": "complete",
+            "target": "record.md",
+            "pending_retained": false,
+            "sync": {
+              "file": "synced",
+              "directory": "synced"
+            },
+            "issues": [],
+            "pending": "record.md.pending",
+            "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "candidate_revision": 1,
+            "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "observed_revision": 1
+          },
+          "pid": 55022
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55023,
+        "result": {
+          "classification": "saved",
+          "cleanedPending": false,
+          "status": "unchanged",
+          "save": {
+            "status": "unchanged",
+            "learning_status": "无增量",
+            "committed": false,
+            "reason": "no_increment",
+            "phase": "read_current",
+            "target": "record.md",
+            "pending_retained": false,
+            "sync": {
+              "file": "not_attempted",
+              "directory": "not_attempted"
+            },
+            "issues": [],
+            "pending": "record.md.pending",
+            "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "candidate_revision": 1,
+            "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "observed_revision": 1
+          },
+          "pid": 55023
+        }
+      },
+      "interruptionExitCode": 73
+    },
+    "after_replace": {
+      "before": {
+        "path": "cases/save_after_replace/before",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "after": {
+        "path": "cases/save_after_replace/after",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "retry": {
+        "path": "cases/save_after_replace/retry",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55026,
+        "result": {
+          "classification": "saved",
+          "cleanedPending": false,
+          "status": "unchanged",
+          "save": {
+            "status": "unchanged",
+            "learning_status": "无增量",
+            "committed": false,
+            "reason": "no_increment",
+            "phase": "read_current",
+            "target": "record.md",
+            "pending_retained": false,
+            "sync": {
+              "file": "not_attempted",
+              "directory": "not_attempted"
+            },
+            "issues": [],
+            "pending": "record.md.pending",
+            "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "candidate_revision": 1,
+            "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "observed_revision": 1
+          },
+          "pid": 55026
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55027,
+        "result": {
+          "classification": "saved",
+          "cleanedPending": false,
+          "status": "unchanged",
+          "save": {
+            "status": "unchanged",
+            "learning_status": "无增量",
+            "committed": false,
+            "reason": "no_increment",
+            "phase": "read_current",
+            "target": "record.md",
+            "pending_retained": false,
+            "sync": {
+              "file": "not_attempted",
+              "directory": "not_attempted"
+            },
+            "issues": [],
+            "pending": "record.md.pending",
+            "candidate_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "candidate_revision": 1,
+            "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+            "observed_revision": 1
+          },
+          "pid": 55027
+        }
+      },
+      "interruptionExitCode": 73
+    }
+  },
+  "readonly": {
+    "during_write": {
+      "before": {
+        "path": "cases/readonly_during_write/before",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "78f73c439a31eb4544a11acadf97b097e431542802fbdc17fb6b83dded6be835"
+        }
+      },
+      "after": {
+        "path": "cases/readonly_during_write/after",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "78f73c439a31eb4544a11acadf97b097e431542802fbdc17fb6b83dded6be835"
+        }
+      },
+      "retry": {
+        "path": "cases/readonly_during_write/retry",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "78f73c439a31eb4544a11acadf97b097e431542802fbdc17fb6b83dded6be835"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55020,
+        "result": {
+          "classification": "not_saved",
+          "cleanedPending": false,
+          "status": "pending",
+          "pid": 55020
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55021,
+        "result": {
+          "classification": "not_saved",
+          "cleanedPending": false,
+          "status": "pending",
+          "pid": 55021
+        }
+      },
+      "interruptionExitCode": 73
+    },
+    "before_replace": {
+      "before": {
+        "path": "cases/readonly_before_replace/before",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "after": {
+        "path": "cases/readonly_before_replace/after",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "retry": {
+        "path": "cases/readonly_before_replace/retry",
+        "files": {
+          "record.md": "d3bce12b8fb2dc9f609744c5ecafc02230a1d5c83e0e9a79fbdd0dd91e318375",
+          "record.md.pending": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55024,
+        "result": {
+          "classification": "not_saved",
+          "cleanedPending": false,
+          "status": "pending",
+          "pid": 55024
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55025,
+        "result": {
+          "classification": "not_saved",
+          "cleanedPending": false,
+          "status": "pending",
+          "pid": 55025
+        }
+      },
+      "interruptionExitCode": 73
+    },
+    "after_replace": {
+      "before": {
+        "path": "cases/readonly_after_replace/before",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "after": {
+        "path": "cases/readonly_after_replace/after",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "retry": {
+        "path": "cases/readonly_after_replace/retry",
+        "files": {
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55028,
+        "result": {
+          "classification": "saved",
+          "cleanedPending": false,
+          "status": "unchanged",
+          "pid": 55028
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55029,
+        "result": {
+          "classification": "saved",
+          "cleanedPending": false,
+          "status": "unchanged",
+          "pid": 55029
+        }
+      },
+      "interruptionExitCode": 73
+    }
+  },
+  "archives": {
+    "archive_before_replace": {
+      "before": {
+        "path": "cases/archive_before_replace/before",
+        "files": {
+          "archive/record.md": "3f977220134d7e0a0b88851b31ee6468d2c6d583db6b9d1496706358f1a00afc",
+          "archive/record.md.pending": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "after": {
+        "path": "cases/archive_before_replace/after",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "retry": {
+        "path": "cases/archive_before_replace/retry",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55031,
+        "result": {
+          "status": "saved",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "not_saved",
+            "cleanedPending": true,
+            "status": "saved",
+            "save": {
+              "status": "saved",
+              "learning_status": "已保存",
+              "committed": true,
+              "reason": "candidate_verified",
+              "phase": "complete",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "synced",
+                "directory": "synced"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "not_saved",
+            "cleanedPending": false,
+            "status": "saved",
+            "save": {
+              "status": "saved",
+              "learning_status": "已保存",
+              "committed": true,
+              "reason": "candidate_verified",
+              "phase": "complete",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "synced",
+                "directory": "synced"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55031
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55032,
+        "result": {
+          "status": "unchanged",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55032
+        }
+      },
+      "firstAttempt": {
+        "exitCode": 73,
+        "pid": 55030,
+        "result": null
+      }
+    },
+    "between_commits": {
+      "before": {
+        "path": "cases/between_commits/before",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c"
+        }
+      },
+      "after": {
+        "path": "cases/between_commits/after",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "retry": {
+        "path": "cases/between_commits/retry",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55034,
+        "result": {
+          "status": "saved",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "not_saved",
+            "cleanedPending": false,
+            "status": "saved",
+            "save": {
+              "status": "saved",
+              "learning_status": "已保存",
+              "committed": true,
+              "reason": "candidate_verified",
+              "phase": "complete",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "synced",
+                "directory": "synced"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55034
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55035,
+        "result": {
+          "status": "unchanged",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55035
+        }
+      },
+      "firstAttempt": {
+        "exitCode": 73,
+        "pid": 55033,
+        "result": null
+      }
+    },
+    "current_before_replace": {
+      "before": {
+        "path": "cases/current_before_replace/before",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+          "record.md.pending": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "after": {
+        "path": "cases/current_before_replace/after",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "retry": {
+        "path": "cases/current_before_replace/retry",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55037,
+        "result": {
+          "status": "saved",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "not_saved",
+            "cleanedPending": true,
+            "status": "saved",
+            "save": {
+              "status": "saved",
+              "learning_status": "已保存",
+              "committed": true,
+              "reason": "candidate_verified",
+              "phase": "complete",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "synced",
+                "directory": "synced"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55037
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55038,
+        "result": {
+          "status": "unchanged",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55038
+        }
+      },
+      "firstAttempt": {
+        "exitCode": 73,
+        "pid": 55036,
+        "result": null
+      }
+    },
+    "current_after_replace": {
+      "before": {
+        "path": "cases/current_after_replace/before",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "after": {
+        "path": "cases/current_after_replace/after",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "retry": {
+        "path": "cases/current_after_replace/retry",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55040,
+        "result": {
+          "status": "unchanged",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55040
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55041,
+        "result": {
+          "status": "unchanged",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55041
+        }
+      },
+      "firstAttempt": {
+        "exitCode": 73,
+        "pid": 55039,
+        "result": null
+      }
+    },
+    "current_replace_failure": {
+      "before": {
+        "path": "cases/current_replace_failure/before",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+          "record.md.pending": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "after": {
+        "path": "cases/current_replace_failure/after",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "retry": {
+        "path": "cases/current_replace_failure/retry",
+        "files": {
+          "archive/record.md": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+          "record.md": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076"
+        }
+      },
+      "resume": {
+        "exitCode": 0,
+        "pid": 55043,
+        "result": {
+          "status": "saved",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "not_saved",
+            "cleanedPending": true,
+            "status": "saved",
+            "save": {
+              "status": "saved",
+              "learning_status": "已保存",
+              "committed": true,
+              "reason": "candidate_verified",
+              "phase": "complete",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "synced",
+                "directory": "synced"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55043
+        }
+      },
+      "retryProcess": {
+        "exitCode": 0,
+        "pid": 55044,
+        "result": {
+          "status": "unchanged",
+          "migrationCompleted": true,
+          "archive": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "saved",
+            "cleanedPending": false,
+            "status": "unchanged",
+            "save": {
+              "status": "unchanged",
+              "learning_status": "无增量",
+              "committed": false,
+              "reason": "no_increment",
+              "phase": "read_current",
+              "target": "record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "not_attempted",
+                "directory": "not_attempted"
+              },
+              "issues": [],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "observed_revision": 2
+            }
+          },
+          "pid": 55044
+        }
+      },
+      "firstAttempt": {
+        "exitCode": 0,
+        "pid": 55042,
+        "result": {
+          "status": "pending",
+          "migrationCompleted": false,
+          "archive": {
+            "classification": "not_saved",
+            "cleanedPending": false,
+            "status": "saved",
+            "save": {
+              "status": "saved",
+              "learning_status": "已保存",
+              "committed": true,
+              "reason": "candidate_verified",
+              "phase": "complete",
+              "target": "archive/record.md",
+              "pending_retained": false,
+              "sync": {
+                "file": "synced",
+                "directory": "synced"
+              },
+              "issues": [],
+              "pending": "archive/record.md.pending",
+              "candidate_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "candidate_revision": 2,
+              "target_sha256": "8857796dde0256f9cc8b1ab3d8f7610022afbbb4a6009a8fd43d83a7a8815dda",
+              "observed_revision": 2
+            }
+          },
+          "current": {
+            "classification": "not_saved",
+            "cleanedPending": false,
+            "status": "pending",
+            "save": {
+              "status": "pending",
+              "learning_status": "待保存",
+              "committed": false,
+              "reason": "save_failed_original_preserved",
+              "phase": "replace",
+              "target": "record.md",
+              "pending_retained": true,
+              "sync": {
+                "file": "synced",
+                "directory": "not_attempted"
+              },
+              "issues": [
+                {
+                  "type": "OSError",
+                  "errno": 5,
+                  "reason": "operation_failed"
+                }
+              ],
+              "pending": "record.md.pending",
+              "candidate_sha256": "2ad437f1acb4344dba4ed317e52c64d74d17fdca5dcf1d561105668f6b6dd076",
+              "candidate_revision": 2,
+              "target_sha256": "2f934393f1dfd5a6f7f6e77331b9c0644971239992684086f81639a66d88109c",
+              "observed_revision": 1
+            }
+          },
+          "pid": 55042
+        }
+      }
+    }
+  },
+  "unicode": {
+    "result": {
+      "status": "pending",
+      "learning_status": "待保存",
+      "committed": false,
+      "reason": "preflight_or_parent_creation_failed",
+      "phase": "preflight",
+      "target": "café.md",
+      "pending_retained": null,
+      "sync": {
+        "file": "not_attempted",
+        "directory": "not_attempted"
+      },
+      "issues": [
+        {
+          "type": "_Invalid",
+          "errno": null,
+          "reason": "authorized_path_alias"
+        }
+      ],
+      "pending": "café.md.pending"
+    },
+    "files": {}
+  }
+}

@@ -23,7 +23,7 @@ test('package, plugin and marketplace expose the same two skills', () => {
   });
   const skills = path.resolve(root, plugin.skills);
   assert.equal(skills, path.join(root, 'skills'));
-  assert.deepEqual(fs.readdirSync(skills).sort(), names);
+  assert.deepEqual(fs.readdirSync(skills).filter((name) => name !== '.DS_Store').sort(), names);
   for (const name of names) {
     assert.ok(fs.statSync(path.join(skills, name, 'SKILL.md')).isFile());
     assert.ok(fs.statSync(path.join(skills, name, 'agents/openai.yaml')).isFile());

@@ -1,0 +1,13 @@
+{
+  "old": {
+    "registration_day_0": "Monday"
+  },
+  "current": {
+    "registration_day_0": "Sunday"
+  },
+  "affected_entry": "day-map",
+  "unrelated_entry": {
+    "id": "headings",
+    "source_unchanged": true
+  }
+}

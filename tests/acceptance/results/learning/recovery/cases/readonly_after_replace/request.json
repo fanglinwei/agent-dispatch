@@ -1,0 +1,8 @@
+{
+  "scope": "isolated-simulated-user",
+  "operation": "save",
+  "project": "cases/readonly_after_replace/project",
+  "readonly": true,
+  "allowed": [],
+  "pendingEvidence": {}
+}

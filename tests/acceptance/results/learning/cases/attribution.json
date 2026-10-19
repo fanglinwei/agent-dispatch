@@ -1,0 +1,13 @@
+{
+  "checks": [
+    {
+      "result": "dependency unavailable"
+    },
+    {
+      "result": "publishing not authorized"
+    },
+    {
+      "result": "cause unknown"
+    }
+  ]
+}

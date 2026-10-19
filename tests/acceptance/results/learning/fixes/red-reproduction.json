@@ -1,0 +1,14 @@
+{
+  "method": "deterministic operational reproductions permitted by the old instructions; not a claim of a shipped runtime implementation",
+  "path": {
+    "role_key": "protocol",
+    "protocol_preserved": false,
+    "same_target": true
+  },
+  "interruption": {
+    "exit_code": 71,
+    "previous_bytes_preserved": false,
+    "record_valid": false,
+    "independent_previous_copy_required_by_old_protocol": false
+  }
+}

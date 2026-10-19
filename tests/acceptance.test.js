@@ -11,7 +11,7 @@ const json = (file) => JSON.parse(read(file));
 const hash = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 
 function files(folder) {
-  return fs.readdirSync(folder, { withFileTypes: true }).flatMap((entry) => {
+  return fs.readdirSync(folder, { withFileTypes: true }).filter((entry) => entry.name !== '.DS_Store').flatMap((entry) => {
     const file = path.join(folder, entry.name);
     return entry.isDirectory() ? files(file) : [file];
   });
@@ -30,7 +30,7 @@ function role(file) {
   }));
 }
 
-test('live replay evidence belongs to the current skill content', () => {
+test('saved replay artifacts have validation for the current skill content', () => {
   const evidence = json(path.join(suite, 'results/replay.json'));
   assert.equal(evidence.version, json(path.join(root, 'package.json')).version);
   assert.deepEqual(evidence.skills, snapshot(path.join(root, 'skills')), 'skill content changed: rerun behavioral acceptance');
@@ -40,6 +40,10 @@ test('live replay evidence belongs to the current skill content', () => {
   assert.deepEqual(evidence.outputs, outputs, 'artifacts changed after the live replay');
   assert.equal(evidence.nativeTomlParse, 'PASS');
   assert.equal(evidence.scope, 'isolated-simulated-user');
+  if (evidence.revalidation || evidence.priorSkills) {
+    assert.ok(evidence.revalidation && evidence.priorSkills, 'retain prior provenance when reusing unaffected evidence');
+    assert.ok(fs.existsSync(path.join(suite, 'results', evidence.revalidation.report)));
+  }
 });
 
 test('first configuration and actual addition preserve upstream bodies, provenance and license', () => {
@@ -63,9 +67,31 @@ test('first configuration and actual addition preserve upstream bodies, provenan
     const configured = role(path.join(folder, output));
     assert.equal(configured.name, frontmatter[1].match(/^name: (.*)$/m)[1]);
     assert.equal(configured.description, frontmatter[1].match(/^description: (.*)$/m)[1]);
-    assert.equal(configured.developer_instructions, original.slice(frontmatter[0].length));
+    const roleKey = output.replace(/\.toml$/, '');
+    const guidance = read(path.join(root, 'skills/agent-dispatch/assets/role-learning.txt')).replaceAll('ROLE_KEY', roleKey);
+    assert.equal(configured.developer_instructions, original.slice(frontmatter[0].length) + guidance);
     assert.ok(read(path.join(folder, output)).includes(`/blob/${source.commit}/${upstream}`));
     assert.equal(read(path.join(folder, 'LICENSE.agency-agents')), read(path.join(fixture, 'upstream/LICENSE')));
+  }
+});
+
+test('generated learning is project local, preserves upstream duties and starts without invented experience', () => {
+  for (const stage of ['initial', 'after-addition']) {
+    const project = path.join(suite, 'results/team', stage);
+    const protocol = path.join(project, '.codex/agent-memory/protocol.md');
+    assert.equal(read(protocol), read(path.join(root, 'skills/agent-dispatch/assets/learning-protocol.md')));
+    const keys = stage === 'initial' ? ['content-creator'] : ['content-creator', 'legal-compliance-checker'];
+    for (const key of keys) {
+      const file = path.join(project, '.codex/agent-memory', `${key}.md`);
+      const record = JSON.parse(read(file).match(/```json\n([\s\S]*?)\n```/)[1]);
+      assert.equal(record.format_version, 1);
+      assert.equal(record.role_key, key);
+      assert.equal(record.revision, 0);
+      assert.deepEqual(record.entries, []);
+      assert.deepEqual(record.receipts, []);
+      assert.ok(read(path.join(project, 'AGENTS.md')).includes(`.codex/agent-memory/${key}.md`));
+    }
+    assert.ok(!fs.existsSync(path.join(project, '.codex/agent-memory/archive')), 'empty archives are not needed');
   }
 });
 

@@ -1,0 +1,7 @@
+{
+  "installed_skill": "agent-dispatch-doc only",
+  "project_protocol": "protocol.md",
+  "legacy_case_has_protocol": false,
+  "authorized_scope": "documents only",
+  "role_configuration_authorized": false
+}

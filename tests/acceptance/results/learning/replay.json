@@ -1,0 +1,189 @@
+{
+  "scope": "isolated-simulated-user",
+  "performedAt": "2026-10-19T04:03:33.256437+00:00",
+  "repair": {
+    "agent": "/root/learning_repair",
+    "forkTurns": "none",
+    "prompt": "repair-prompt.md",
+    "readRevision": 0,
+    "task": "PASS",
+    "saving": "saved",
+    "entry": "active"
+  },
+  "reuse": {
+    "agent": "/root/learning_reuse",
+    "forkTurns": "none",
+    "prompt": "reuse-prompt.md",
+    "readRevision": 1,
+    "task": "PASS",
+    "increment": "none"
+  },
+  "noIncrement": {
+    "agent": "/root/learning_reuse",
+    "before": "24affc55b1b1149aa6996fefdb8cd0c638a4f2b9b43bb009b67de0e7ffe06019",
+    "after": "24affc55b1b1149aa6996fefdb8cd0c638a4f2b9b43bb009b67de0e7ffe06019",
+    "revision": 1
+  },
+  "readonly": {
+    "before": {
+      ".codex/agent-memory/content-creator.md": "e71e3094a7591b3c72270cd5004753d49f8dd687b79b86f876c052d1d51fde2f",
+      ".codex/agent-memory/legal-compliance-checker.md": "f89665e155ce848f45afaf6730ca00c33c484ed802e5fcde4ca519ad9ce18d05",
+      ".codex/agent-memory/protocol.md": "7216bda008f36429dea8d6552b3653420d3a25acb3338706889b6d2f1cd5d5d5",
+      ".codex/agents/LICENSE.agency-agents": "9a45258434d5cedf0af73c9ad4771373701225038d246c49219026c33677f66f",
+      ".codex/agents/content-creator.toml": "461646bd75358f376ced49cefcae8ac3556df51d2338bb9096043ed8f1f9a507",
+      ".codex/agents/legal-compliance-checker.toml": "3232d87a820f1ce30b39429b52b1d347e9eba9145f6ae215a062958ccd876757",
+      "AGENTS.md": "d902cc2bbd36535b7ddd3713e09df750bd2469bd0d838ec0217cfa6a1580c386",
+      "review-input.md": "7f569bf95a60c1b17e770cc617b3ea51e3123dff166e48d97f1a05ba1ec958eb"
+    },
+    "after": {
+      ".codex/agent-memory/content-creator.md": "e71e3094a7591b3c72270cd5004753d49f8dd687b79b86f876c052d1d51fde2f",
+      ".codex/agent-memory/legal-compliance-checker.md": "f89665e155ce848f45afaf6730ca00c33c484ed802e5fcde4ca519ad9ce18d05",
+      ".codex/agent-memory/protocol.md": "7216bda008f36429dea8d6552b3653420d3a25acb3338706889b6d2f1cd5d5d5",
+      ".codex/agents/LICENSE.agency-agents": "9a45258434d5cedf0af73c9ad4771373701225038d246c49219026c33677f66f",
+      ".codex/agents/content-creator.toml": "461646bd75358f376ced49cefcae8ac3556df51d2338bb9096043ed8f1f9a507",
+      ".codex/agents/legal-compliance-checker.toml": "3232d87a820f1ce30b39429b52b1d347e9eba9145f6ae215a062958ccd876757",
+      "AGENTS.md": "d902cc2bbd36535b7ddd3713e09df750bd2469bd0d838ec0217cfa6a1580c386",
+      "review-input.md": "7f569bf95a60c1b17e770cc617b3ea51e3123dff166e48d97f1a05ba1ec958eb"
+    }
+  },
+  "boundaries": {
+    "candidate": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/candidate.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "missing": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/missing.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "attribution": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/attribution.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "authority": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/authority.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "changed-source": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/changed-source.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "instances": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/instances.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "writer": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/writer.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "interrupted": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/interrupted.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "archive": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/archive.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "readonly": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/readonly.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "lifecycle": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/lifecycle.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "stopping": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/stopping.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    },
+    "standalone-doc": {
+      "agent": "/root/learning_boundaries",
+      "input": "cases/standalone-doc.json",
+      "response": "cases/response.md",
+      "sha256": "de8e038efaf621dcadbd40384bb1b6ca7ece8e61d49b2caf83581025b71bc7de",
+      "assessment": "boundary-assessment.md",
+      "outcome": "PASS",
+      "method": "actual read of seeded state; no real crash or concurrency injection"
+    }
+  },
+  "configuration": {
+    "baseline": "/root/learning_red",
+    "candidate": "/root/learning_green_config",
+    "repeat": "/root/learning_repeat",
+    "initialAndAdditionWriter": "primary",
+    "nativeTomlParse": "PASS",
+    "tomlParser": "Python 3.14.8 tomllib"
+  },
+  "lifecycle": {
+    "legacyMigration": "executed in isolated copy by primary; fields preserved",
+    "rename": "executed in isolated copy by primary; stable key and memory bytes preserved",
+    "splitMergeRetirement": "decision scenarios only"
+  },
+  "limitations": [
+    "Single samples; no statistical or cost comparison.",
+    "Generic agents read actual roles; native registration/loading not tested.",
+    "Recovery and archive are seeded-state decision tests, not actual process crash tests.",
+    "Multi-primary concurrent writes are not supported or tested.",
+    "Exact save-exception scenario checks authorization only; no save performed.",
+    "Runtime requested model/effort are known; actual model identities not independently verified."
+  ]
+}

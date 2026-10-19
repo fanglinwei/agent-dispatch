@@ -1,0 +1,16 @@
+{
+  "outcome": "PASS",
+  "harnessSha256": "6d7cce5d7aa68ac25bb71aeecc51b39019eae98b3109fe6ec02f3d327745814e",
+  "testSha256": "8e3d69aba5b02c770dfe98d2315d001f6815de60323df37d06bfdfc5c66a65a3",
+  "checks": {
+    "elapsedSeconds": 0.07913150000058522,
+    "upperBoundSeconds": 1.5,
+    "communicationTimeoutSeconds": 0.05,
+    "killCalls": 1,
+    "childReturnCode": -9,
+    "reaped": true,
+    "exception": "TimeoutExpired",
+    "stdout": "{\"status\":\"saved\"}\n",
+    "stderr": "child waiting\n"
+  }
+}

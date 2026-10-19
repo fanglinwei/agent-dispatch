@@ -1,0 +1,117 @@
+{
+  "new_role": {
+    "role_key": "protocol-role-2",
+    "entrypoint": "AGENTS.md",
+    "role_config": ".codex/agents/protocol.toml",
+    "call_name": null,
+    "call_name_rule": "Read and retain the existing TOML name; the scenario does not supply its value.",
+    "protocol": ".codex/agent-memory/protocol.md",
+    "memory": ".codex/agent-memory/protocol-role-2.md",
+    "archive": ".codex/agent-memory/archive/protocol-role-2.md",
+    "pending": ".codex/agent-memory/protocol-role-2.md.pending",
+    "archive_pending": ".codex/agent-memory/archive/protocol-role-2.md.pending",
+    "guidance": "\n\n项目学习入口：以本次获准项目根为基准，先读取 AGENTS.md 的岗位映射与 .codex/agent-memory/protocol.md，再实际读取 .codex/agent-memory/protocol-role-2.md；稳定 role-key 为 protocol-role-2。按协议在任务中核实纠错并交接增量，当前授权及正式职责优先。记忆缺失时报告并依权威材料继续，不自行迁移配置或写共享记忆。\n",
+    "guidance_placement": "append exactly once after the full existing developer_instructions; preserve original text and custom fields; record the actual adaptation in source comments",
+    "initial_memory_record": {
+      "format_version": 1,
+      "role_key": "protocol-role-2",
+      "revision": 0,
+      "entries": [],
+      "receipts": [],
+      "history": []
+    },
+    "maintenance_authorization": {
+      "scope": "simulated proposal only; no real project write authority granted by this report",
+      "sole_writer": "authorized main agent; one main writer in the same workspace",
+      "targets": [
+        ".codex/agent-memory/protocol-role-2.md",
+        ".codex/agent-memory/archive/protocol-role-2.md"
+      ],
+      "staging": [
+        ".codex/agent-memory/protocol-role-2.md.pending",
+        ".codex/agent-memory/archive/protocol-role-2.md.pending"
+      ],
+      "staging_purpose": "exclusive same-directory candidate for its corresponding target only",
+      "archive_creation": "only when needed and authorized; do not precreate an empty archive or archive directory",
+      "pending_creation": "only during an authorized save, by exclusive new-file creation; do not precreate or follow a pending symlink",
+      "ordinary_task": "use complete existing maintenance authorization without repeated confirmation, subject to current task and Skill restrictions",
+      "read_only_task": "handoff only unless a current explicit exception covers both exact target and exact corresponding pending path",
+      "role_access": "read project entrypoint, protocol, own relevant memory and explicitly authorized task materials; write only assigned exclusive task outputs",
+      "configuration_changes": "AGENTS.md, learning protocol and role TOML changes need their own explicit configuration authorization",
+      "no_delta": "no target, archive or pending writes",
+      "archive_read_access": "not an automatic role-wide archive permission; relevant historical reads must be justified and dispatched within the task scope"
+    },
+    "configuration_plan": {
+      "edit": [
+        "AGENTS.md",
+        ".codex/agents/protocol.toml"
+      ],
+      "initialize_if_absent": [
+        ".codex/agent-memory/protocol-role-2.md"
+      ],
+      "protocol_action": "Read the actual protocol. If absent, copy the current learning-protocol.md under configuration authorization; if present, preserve valid customizations and adapt only confirmed missing requirements.",
+      "never_overwrite_occupied_role": [
+        ".codex/agent-memory/protocol-role.md"
+      ],
+      "do_not_precreate": [
+        ".codex/agent-memory/archive/protocol-role-2.md",
+        ".codex/agent-memory/protocol-role-2.md.pending",
+        ".codex/agent-memory/archive/protocol-role-2.md.pending"
+      ]
+    },
+    "path_check_status": "Exact project-relative mapping selected from the supplied scenario. The real project root, unlisted roles, filesystem aliases and preexisting pending files were not supplied; real write eligibility remains unverified."
+  },
+  "existing_role": {
+    "role_key": "protocol",
+    "entrypoint": "AGENTS.md",
+    "role_config": null,
+    "role_config_rule": "Retain the existing role configuration discovered from the authoritative mapping. Its exact path is not supplied in request 2; do not infer it from role_key.",
+    "call_name": null,
+    "call_name_rule": "Retain the actual current call name; not supplied by the scenario.",
+    "protocol": ".codex/agent-memory/protocol.md",
+    "memory": "records/protocol.md",
+    "archive": ".codex/agent-memory/archive/protocol.md",
+    "pending": "records/protocol.md.pending",
+    "archive_pending": ".codex/agent-memory/archive/protocol.md.pending",
+    "guidance": "\n\n项目学习入口：以本次获准项目根为基准，先读取 AGENTS.md 的岗位映射与 .codex/agent-memory/protocol.md，再实际读取 records/protocol.md；稳定 role-key 为 protocol。按协议在任务中核实纠错并交接增量，当前授权及正式职责优先。记忆缺失时报告并依权威材料继续，不自行迁移配置或写共享记忆。\n",
+    "guidance_placement": "Reuse or update an equivalent existing guidance paragraph; append exactly once only if missing. Preserve the full existing developer_instructions and all other customizations.",
+    "memory_action": "Continue using records/protocol.md and preserve original bytes, valid entries, current revision, receipts and history until an authorized substantive maintenance save; do not initialize or migrate it.",
+    "maintenance_authorization": {
+      "scope": "simulated proposal only; no real project write authority granted by this report",
+      "sole_writer": "authorized main agent; one main writer in the same workspace",
+      "targets": [
+        "records/protocol.md",
+        ".codex/agent-memory/archive/protocol.md"
+      ],
+      "staging": [
+        "records/protocol.md.pending",
+        ".codex/agent-memory/archive/protocol.md.pending"
+      ],
+      "staging_purpose": "exclusive same-directory candidate for its corresponding target only",
+      "archive_creation": "only when needed and authorized; do not precreate an empty archive or archive directory",
+      "pending_creation": "only during an authorized save, by exclusive new-file creation; do not precreate or follow a pending symlink",
+      "ordinary_task": "use complete existing maintenance authorization without repeated confirmation, subject to current task and Skill restrictions",
+      "read_only_task": "handoff only unless a current explicit exception covers both exact target and exact corresponding pending path",
+      "role_access": "read project entrypoint, protocol, own relevant memory and explicitly authorized task materials; write only assigned exclusive task outputs",
+      "configuration_changes": "AGENTS.md, learning protocol and role TOML changes need their own explicit configuration authorization",
+      "no_delta": "no target, archive or pending writes",
+      "archive_read_access": "not an automatic role-wide archive permission; relevant historical reads must be justified and dispatched within the task scope"
+    },
+    "configuration_plan": {
+      "edit": [
+        "AGENTS.md"
+      ],
+      "role_toml_edit": "Blocked only on its exact file location and full original text; guidance itself is fully rendered.",
+      "protocol_action": "Retain .codex/agent-memory/protocol.md; compare the current protocol and adapt any missing maintenance clauses only with configuration authorization, preserving valid customizations.",
+      "memory_initialize": false,
+      "memory_migrate": false,
+      "archive_action": "This is a newly specified on-demand archive path, not a claim that an existing archive is located here. If an authoritative existing archive mapping is found, preserve it and revise the affected plan before writing.",
+      "do_not_precreate": [
+        ".codex/agent-memory/archive/protocol.md",
+        "records/protocol.md.pending",
+        ".codex/agent-memory/archive/protocol.md.pending"
+      ]
+    },
+    "path_check_status": "Exact learning mapping selected from the supplied scenario; real project root, existing role TOML path, archive mapping, aliases and preexisting pending files were not supplied. No physical-path uniqueness or preservation check has been claimed."
+  }
+}

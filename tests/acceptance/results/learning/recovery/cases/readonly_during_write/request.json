@@ -1,0 +1,10 @@
+{
+  "scope": "isolated-simulated-user",
+  "operation": "save",
+  "project": "cases/readonly_during_write/project",
+  "readonly": true,
+  "allowed": [],
+  "pendingEvidence": {
+    "record.md.pending": "78f73c439a31eb4544a11acadf97b097e431542802fbdc17fb6b83dded6be835"
+  }
+}

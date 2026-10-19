@@ -1,0 +1,11 @@
+{
+  "scope": "isolated-simulated-user",
+  "operation": "save",
+  "project": "cases/save_after_replace/project",
+  "readonly": false,
+  "allowed": [
+    "record.md",
+    "record.md.pending"
+  ],
+  "pendingEvidence": {}
+}

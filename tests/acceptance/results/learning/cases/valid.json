@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "role_key": "content-creator",
+  "revision": 1,
+  "entries": [
+    {
+      "id": "day-map",
+      "kind": "correction",
+      "status": "active",
+      "summary": "v1 weekdays",
+      "scope": "community",
+      "sources": [
+        {
+          "path": "day-contract.md",
+          "version": "v1"
+        }
+      ],
+      "verification": "checked draft against v1",
+      "action": "read data contract",
+      "recheck_when": "contract changes",
+      "origin": [
+        "repair/content-creator/a/1"
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "delta_id": "repair/content-creator/a/1",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result_revision": 1,
+      "entry_ids": [
+        "day-map"
+      ]
+    }
+  ],
+  "history": []
+}

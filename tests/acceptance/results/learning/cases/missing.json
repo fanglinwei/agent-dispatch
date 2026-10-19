@@ -1,0 +1,5 @@
+{
+  "memory_path": "does-not-exist.md",
+  "authoritative_source": "request.md",
+  "memory_exists": false
+}

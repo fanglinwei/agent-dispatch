@@ -1,0 +1,74 @@
+# 岗位记忆
+
+本文件是项目数据，依项目学习协议维护。
+
+```json
+{
+  "format_version": 1,
+  "role_key": "content-creator",
+  "revision": 1,
+  "entries": [
+    {
+      "id": "registration-day-project-contract-v1",
+      "kind": "correction",
+      "status": "active",
+      "summary": "本项目 registration_day 按 day-contract.md v1 的 0～6 对应周一～周日；本次编号 0 的报名提示应为周一。",
+      "scope": "仅本项目提供的活动资料与依赖 day-contract.md v1 的周刊报名提示。",
+      "sources": [
+        {
+          "path": "day-contract.md",
+          "version": "v1",
+          "sha256": "8e7ad0947222f318b24b98a4a7dc9aeb51a7c6c19db66e9c59b8bb3f17f49a28"
+        },
+        {
+          "path": "activity.json",
+          "sha256": "de8450b011b61c734c8fedabbd175174de30bf991e0cd8e4a58c8c71b1ac46ba"
+        },
+        {
+          "path": "draft.md",
+          "sha256": "f8c348a94c3cefb2aa42493c435965374e98b3b454d3cd61da80927b682cdf87"
+        },
+        {
+          "path": "outputs/repair.md",
+          "sha256": "0ab3c0a344cb724541b6293766d2b5d6ed9439756b2341f87903da0761bb5cb0"
+        }
+      ],
+      "verification": {
+        "method": "Python 读取 activity.json，直接解析 day-contract.md 的中文星期顺序，与 outputs/repair.md 全文比较，并核对原稿只改一处报名星期。",
+        "result": "PASS：邻里阅读会、原编号 0、报名提示周一逐项一致；源资料及 revision 0 记忆原始指纹保持不变。",
+        "exit_code": 0,
+        "independent": false,
+        "artifact": "outputs/repair.md",
+        "artifact_sha256": "0ab3c0a344cb724541b6293766d2b5d6ed9439756b2341f87903da0761bb5cb0"
+      },
+      "action": "编辑或审稿时逐条核对活动名称、原始编号和项目数据约定的中文星期；不从语言运行库的星期编号推断。",
+      "recheck_when": "day-contract.md 语义或活动资料发生变化，或输出报名提示的规则被修改时，重新核对受影响稿件。",
+      "origin": {
+        "task_id": "repair",
+        "role_key": "content-creator",
+        "dispatch_id": "repair-a",
+        "sequence": 1,
+        "delta_id": "repair/content-creator/repair-a/1",
+        "runtime_identity": "/root/learning_repair"
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "delta_id": "repair/content-creator/repair-a/1",
+      "sha256": "32ab9d96873c022d3483b4e77121a5a148bfec8a44e15469a4e9b78c3ee43961",
+      "result_revision": 1,
+      "entry_ids": [
+        "registration-day-project-contract-v1"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "revision": 0,
+      "entries": [],
+      "receipts": []
+    }
+  ]
+}
+```
