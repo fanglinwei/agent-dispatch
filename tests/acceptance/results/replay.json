@@ -1,17 +1,17 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "performedAt": "2026-10-19T02:03:32.418854+00:00",
   "scope": "isolated-simulated-user",
   "nativeTomlParse": "PASS",
   "tomlParser": "Python 3.14.8 standard-library tomllib",
   "skills": {
-    "agent-dispatch/SKILL.md": "d90b0500089fa4fb518711f12450d5a6bd9e38db3b413aed97c7526d9a81a23c",
+    "agent-dispatch/SKILL.md": "9c6048d7e31a6ad9f277fe30e735ce4b50788db0e3d49b77bc20ddcd56f805c7",
     "agent-dispatch/agents/openai.yaml": "521d49da03e5a054b939f47da8e1f735625d834be9c928c312205b0dea45b844",
     "agent-dispatch/assets/learning-protocol.md": "c9b61e36ddad5585d8bea0fee56cc3993a00b9cbaa6ab53f2dd0652936302f84",
     "agent-dispatch/assets/role-learning.txt": "b3d0ef91c655e3ee26d068586980369b0de554737739a55c3fa9a46b0f3153d0",
     "agent-dispatch/assets/role-memory.md": "c049d212677849db1a2433b0a07e8a42b31f2ffc7157fb13df8140cbd7c44938",
-    "agent-dispatch/references/codex-project-agents.md": "fc9dd193b5981d1434e33ed29d5a58a76e2a3e8970af54c0169efb61f7f8cea6",
-    "agent-dispatch/references/interview.md": "8ba8d35f1017484599fc3d4f28a14573c2e5e4c05cffd5f2c2f4ff8bd277c9e9",
+    "agent-dispatch/references/codex-project-agents.md": "c091dd159a1fc123a08241ce69d041951f533e7bde669a0f6a54a70aecfd0b27",
+    "agent-dispatch/references/interview.md": "832c4486eb2e6301e387180c6bdd8ee8bde671061d7a071301fbd2ef88024672",
     "agent-dispatch/references/project-learning.md": "82256e724aef28400e56aa35339cb573f80350c0f011dfc389a55d5700be6866",
     "agent-dispatch/references/role-skills.md": "818765b65b08f4edf95ed633c4e1daa625e8fe6e250b80986be6cd6425897833",
     "agent-dispatch-doc/SKILL.md": "62183d0f38db4f3f75859b14cb5cdbe1438d07e23b431f3ea705d4958c099fe4",
@@ -142,6 +142,10 @@
     "documents/roles/ui_owner.toml": "654e7dba02178b77c7becee6c3ee15926b974ac19f3f627bd1667a9d9f12d6cf",
     "documents/skills/review-method/SKILL.md": "7c635d66cb8eef87056fa9a478b51193e8e6cd31fcba50044bd85b8b8a715b88",
     "documents/skills/visual-layout/SKILL.md": "d769573bfeeee184e59400fce8dac3dc2a9c0c0e89730b32acc77c429ab6b012",
+    "interview/assessment.md": "24581d0a534ec123c8ed338d8d1cbddc34e4965fcb5980a020964647718e113b",
+    "interview/prior-replay.json": "efbe1beca7dab8749f85abddf303235dde217de131ad7668fd79330214c115e7",
+    "interview/project/GLOSSARY.md": "16b4baa87e1216252113138f45d5a87fe999be403ee069d2259649d276d4ee45",
+    "interview/project/docs/adr/0001-feedback-identity.md": "7ff74a281539527d0419e416a47a8ec3c5fa87861b6201414728362aa8d1702e",
     "learning/assessment.md": "0c7e3799f7bded06b3f4ff3e415bb87e071aa7c9df290c526e44f22a846bc8bd",
     "learning/boundary-assessment.md": "017ed84a16556a6d7d0453fb82dcb96b3d7503a9f00e9eb889a0b6b4e54831c7",
     "learning/cases/archive.json": "54066a09f513e7a4ce348a0e6da230ba229d36ff7fe924a33724d2809dbe024a",
@@ -458,24 +462,25 @@
     "verification.md": "f3b82b4ea239d936f89b6b1b979eb980cb433f9e23b272f3166f883166c1e0b1"
   },
   "priorSkills": {
-    "agent-dispatch/SKILL.md": "2dab2a8bd9b84f0ebae40f2a6dfa6ad57606fac4f88c63209ac8bd94b4dd2e2c",
+    "agent-dispatch/SKILL.md": "d90b0500089fa4fb518711f12450d5a6bd9e38db3b413aed97c7526d9a81a23c",
     "agent-dispatch/agents/openai.yaml": "521d49da03e5a054b939f47da8e1f735625d834be9c928c312205b0dea45b844",
-    "agent-dispatch/references/codex-project-agents.md": "f4f97ca8501cf1af9c4056c3749b458fb5461462e30dbf1f5e79a3f6936cfcf3",
+    "agent-dispatch/assets/learning-protocol.md": "c9b61e36ddad5585d8bea0fee56cc3993a00b9cbaa6ab53f2dd0652936302f84",
+    "agent-dispatch/assets/role-learning.txt": "b3d0ef91c655e3ee26d068586980369b0de554737739a55c3fa9a46b0f3153d0",
+    "agent-dispatch/assets/role-memory.md": "c049d212677849db1a2433b0a07e8a42b31f2ffc7157fb13df8140cbd7c44938",
+    "agent-dispatch/references/codex-project-agents.md": "fc9dd193b5981d1434e33ed29d5a58a76e2a3e8970af54c0169efb61f7f8cea6",
     "agent-dispatch/references/interview.md": "8ba8d35f1017484599fc3d4f28a14573c2e5e4c05cffd5f2c2f4ff8bd277c9e9",
+    "agent-dispatch/references/project-learning.md": "82256e724aef28400e56aa35339cb573f80350c0f011dfc389a55d5700be6866",
     "agent-dispatch/references/role-skills.md": "818765b65b08f4edf95ed633c4e1daa625e8fe6e250b80986be6cd6425897833",
-    "agent-dispatch-doc/SKILL.md": "544946de4b875f3849940932055a756db4e7be8bddf3901dedac8117a8771ed4",
+    "agent-dispatch-doc/SKILL.md": "62183d0f38db4f3f75859b14cb5cdbe1438d07e23b431f3ea705d4958c099fe4",
     "agent-dispatch-doc/agents/openai.yaml": "cf9b79723fe4af0ede3bdfdd91e70ab6d97fe438cfb92622d20a0e662a035823",
-    "agent-dispatch-doc/references/project-documents.md": "4298202d719e327c690c8cf51ec2a5b3562764643c34fa20c2fe42851d77e311"
+    "agent-dispatch-doc/references/project-documents.md": "72e23bf38ed7b292b4f0511c0e812e41c2c67040b7092db15381bed564c40435"
   },
   "priorPerformedAt": "2026-10-19T02:03:32.418854+00:00",
   "revalidation": {
-    "performedAt": "2026-10-19T04:59:32.997952+00:00",
-    "report": "learning/recovery/timeout/assessment.md",
-    "scope": "Live timeout regression RED/GREEN and full fresh-process recovery rerun; acceptance tooling only; no new model invocations.",
-    "recovery": "learning/recovery/replay.json",
-    "timeout": "learning/recovery/timeout/green.json",
-    "harness": "tests/acceptance/recovery-harness.py",
-    "priorRevalidation": "learning/recovery/timeout/prior-replay.json"
+    "performedAt": "2026-10-20T02:59:46.277955+00:00",
+    "report": "interview/assessment.md",
+    "scope": "Main-agent same-context simulated interview walkthrough and temporary-project file checks; no independent model replay or full-team rerun.",
+    "priorRevalidation": "interview/prior-replay.json"
   },
   "validationHistory": [
     {
@@ -492,12 +497,17 @@
       "record": "learning/recovery/timeout/prior-replay.json",
       "sha256": "44c3f14cd09898ec2026692eeb8525d0fe9645b99dfc6f78beb5c0242cc8807a",
       "preserves": "Complete manifest before timeout cleanup, original invocation identities, timestamps and recovery fingerprints."
+    },
+    {
+      "record": "interview/prior-replay.json",
+      "sha256": "efbe1beca7dab8749f85abddf303235dde217de131ad7668fd79330214c115e7",
+      "preserves": "Complete prior manifest, original identities, timestamps, fingerprints and validation scopes."
     }
   ],
   "releasePreparation": {
-    "previousVersion": "1.0.2",
-    "version": "1.1.0",
-    "preparedAt": "2026-10-19T05:15:09.618129+00:00",
-    "scope": "Release version metadata only; Skill and fixture fingerprints, original model identities, invocation times and saved evidence are unchanged. Release checks are executed separately."
+    "previousVersion": "1.1.0",
+    "version": "1.2.0",
+    "preparedAt": "2026-10-20T02:59:46.277955+00:00",
+    "scope": "Interview routing and documentation boundaries, README, version metadata. Validation scope and limitations are recorded in interview/assessment.md."
   }
 }
